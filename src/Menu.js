@@ -14,7 +14,7 @@ function useHover() {
 
   let {paddingTop, paddingBottom} = currentPadding
 
-  const [value, setValue] = useState(false);
+  const [value, setValue] = useState(true);
   const [animation, setAnimation] = useState(0)
 
   let motion = 1
@@ -83,9 +83,11 @@ function useHover() {
 
 const AnimatedLink = ({ href, name}) =>  {
   const [hoverRef, padding] = useHover();
-  const [color, setColor] = useState('#eee')
+  //const [color, setColor] = useState('#eee')
+  const [color, setColor] = useState('yellow')
 
-  return <li ref={hoverRef} onMouseOver={() => setColor('yellow')} onMouseOut={() => setColor('white')}><a
+  //return <li ref={hoverRef} onMouseOver={() => setColor('yellow')} onMouseOut={() => setColor('white')}><a
+  return <li ref={hoverRef} ><a
     style={{...padding, color}}
     href={href}>{name}</a>
   </li>
@@ -93,11 +95,14 @@ const AnimatedLink = ({ href, name}) =>  {
 
 export default () => {
   const menu = [
+    /*
     {name: 'Apple Music', href:'#'},
     {name: 'Instagram', href:'#'},
     {name: 'Spotify', href:'#'},
     {name: 'Twitter', href:'#'},
     {name: 'YouTube', href:'#'}
+    */
+    {name: 'Coming Soon', href: '#'}
   ]
 
 
