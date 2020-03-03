@@ -13,19 +13,94 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-  background: url('/sky.jpg') no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
 }
 
-#root {
+ul
+{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#webgl {
   display:block;
-  height:calc(100vh - 10px);
-  width: calc(100vw - 10px);
+  height:calc(100vh);
+  width: calc(100vw);
 }
+
+#container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  position: absolute;
+  overflow-y: auto;
+  top:0;
+  left:0;
+}
+
+#container #menu {
+  margin-top:20vh;
+  color: #eee;
+  font-family: 'Press Start 2P';
+  font-size: 20px;
+
+  width: 300px;
+}
+#container #menu:hover {
+  cursor: pointer;
+}
+
+#container #menu a {
+  padding: 14px 0;
+  width:100%;
+  text-align:center;
+  text-shadow: 4px 0 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000;
+}
+
+#container #menu a:link {
+  padding: 14px 0;
+  width:100%;
+  color: #eee;
+  text-decoration:none;
+  text-align:center;
+  text-shadow: 4px 0 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000;
+}
+
+#container #menu a:visited {
+  color: #eee;
+}
+
+#container #menu li {
+  display:flex;
+  justify-content: center;
+  margin-bottom:20px
+}
+
+#container #menu li:hover{
+}
+
+#background {
+  display:flex;
+  height: 100vh;
+  width: 100vw;
+  z-index:-1;
+  position:absolute;
+  top:0;
+  left:0;
+
+}
+#background .react-blur {
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+.image-pro {
+  width:100%;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
