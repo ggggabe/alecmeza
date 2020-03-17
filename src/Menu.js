@@ -94,7 +94,7 @@ const AnimatedLink = ({ href, name}) =>  {
 
 export default () => {
   const menu = [
-    {name: 'Apple Music', href:'https://distrokid.com/hyperfollow/alecmeza/flash--drugs-2'},
+    {name: 'Apple Music', href:'https://music.apple.com/us/album/flash-drugs-single/1500256089'},
     {name: 'Spotify', href:'https://distrokid.com/hyperfollow/alecmeza/flash--drugs-2'},
     {name: 'Instagram', href:'https://www.instagram.com/_alecmeza/'},
     {name: 'Twitter', href:'https://twitter.com/_alecmeza'}
