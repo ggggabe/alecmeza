@@ -97,7 +97,8 @@ export default () => {
     { name: 'Apple Music', href: 'https://music.apple.com/us/album/flash-drugs-single/1500256089' },
     { name: 'Spotify', href: 'https://open.spotify.com/album/2DJOCYHCeZjcH7XftmRJV2?si=dc_b-BHnRUa859R0RecM-w' },
     { name: 'Instagram', href: 'https://www.instagram.com/_alecmeza/' },
-    { name: 'Twitter', href: 'https://twitter.com/_alecmeza' }
+    { name: 'Twitter', href: 'https://twitter.com/_alecmeza' },
+    { name: 'YouTube', href: 'https://youtu.be/beYUQNEpnGo' }
   ]
 
   return (
