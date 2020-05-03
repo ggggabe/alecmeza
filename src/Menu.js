@@ -6,7 +6,7 @@ const PADDING_MIN = 0
 const PADDING_STEP = 0.5
 
 // Hook
-function useHover () {
+function useHover() {
   const [currentPadding, setPadding] = useState({
     paddingTop: PADDING_DEFAULT,
     paddingBottom: PADDING_DEFAULT
@@ -87,7 +87,7 @@ const AnimatedLink = ({ href, name }) => {
     href={href}
     target='_blank'
     rel='noopener noreferrer'
-                                                                                                        >{name}
+  >{name}
   </a>
   </li>
 }
@@ -95,7 +95,7 @@ const AnimatedLink = ({ href, name }) => {
 export default () => {
   const menu = [
     { name: 'Apple Music', href: 'https://music.apple.com/us/album/flash-drugs-single/1500256089' },
-    { name: 'Spotify', href: 'https://open.spotify.com/album/2DJOCYHCeZjcH7XftmRJV2?si=dc_b-BHnRUa859R0RecM-w' },
+    { name: 'Spotify', href: 'https://open.spotify.com/album/0VoJqfXHrPDVo9ixh4ep7K?si=gCHfw22vTmuJW2NQ0EIVTQ' },
     { name: 'Instagram', href: 'https://www.instagram.com/_alecmeza/' },
     { name: 'Twitter', href: 'https://twitter.com/_alecmeza' },
     { name: 'YouTube', href: 'https://youtu.be/beYUQNEpnGo' }
