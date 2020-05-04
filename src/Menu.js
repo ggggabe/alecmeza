@@ -94,7 +94,7 @@ const AnimatedLink = ({ href, name }) => {
 
 export default () => {
   const menu = [
-    { name: 'Apple Music', href: 'https://music.apple.com/us/album/flash-drugs-single/1500256089' },
+    { name: 'Apple Music', href: 'https://music.apple.com/us/album/hot-boy-summer-single/1511449601' },
     { name: 'Spotify', href: 'https://open.spotify.com/album/0VoJqfXHrPDVo9ixh4ep7K?si=gCHfw22vTmuJW2NQ0EIVTQ' },
     { name: 'Instagram', href: 'https://www.instagram.com/_alecmeza/' },
     { name: 'Twitter', href: 'https://twitter.com/_alecmeza' },
