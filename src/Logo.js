@@ -19,7 +19,7 @@ export function Loading() {
 const material = { transparent: true, roughness: 0.8, fog: true, shininess: 0, flatShading: false }
 
 const VirginLogo = ({ color, ...props }) => {
-  const [geometries] = useModel([process.env.PUBLIC_URL,'untitled.glb'].join('/'))
+  const [geometries] = useModel([process.env.PUBLIC_URL, 'untitled.glb'].join('/'))
   const [z, setZ] = useState(3.99)
   const [y, setY] = useState(-0.20)
   const group = useRef()
@@ -29,7 +29,7 @@ const VirginLogo = ({ color, ...props }) => {
   let zDone = false
   let yDone = false
   useFrame(() => {
-    group.current.rotation.y = (group.current.rotation.y - .01) % (Math.PI*2)
+    group.current.rotation.y = (group.current.rotation.y - .01) % (Math.PI * 2)
     if (group.current.position.z > 3.7) {
       setZ(z - .001)
     } else {
@@ -51,7 +51,7 @@ const VirginLogo = ({ color, ...props }) => {
 
   return <group ref={group} position={[0, y, z]}>
     {geometries.map(geom => (
-      <mesh key={geom.uuid} position={[0,0,0]} geometry={geom} rotation={[Math.PI/2, 0, Math.PI]}>
+      <mesh key={geom.uuid} position={[0, 0, 0]} geometry={geom} rotation={[Math.PI / 2, 0, Math.PI]}>
         <meshPhysicalMaterial attach="material" {...material} color='#dde' />
       </mesh>
     ))}
@@ -75,7 +75,7 @@ function Asset ({url}) {
 }
 */
 
-export function Logo (props) {
+export function Logo(props) {
   const { gl } = useThree()
 
   debug({
@@ -85,7 +85,7 @@ export function Logo (props) {
   //gl.physicallyCorrectLights = true
 
   return <Suspense fallback={null}>
-    <VirginLogo position={[0,0,0]} rotation={[Math.PI/2, 0, 0]} color={'red'} />
+    <VirginLogo position={[0, 0, 0]} rotation={[Math.PI / 2, 0, 0]} color={'red'} />
   </Suspense>
   /*
   return <Suspense fallback={<Box {...props}/>}>
