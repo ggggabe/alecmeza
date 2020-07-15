@@ -94,11 +94,12 @@ const AnimatedLink = ({ href, name }) => {
 
 export default () => {
   const menu = [
-    { name: 'Apple Music', href: 'https://music.apple.com/us/album/hot-boy-summer-single/1511449601' },
-    { name: 'Spotify', href: 'https://open.spotify.com/album/0VoJqfXHrPDVo9ixh4ep7K?si=gCHfw22vTmuJW2NQ0EIVTQ' },
+    { name: 'Apple Music', href: 'https://music.apple.com/us/album/extra-virgin/1520478485?uo=4&app=itunes' },
+    { name: 'Spotify', href: 'https://distrokid.com/hyperfollow/alecmeza/extra-virgin' },
+    { name: 'Sound Cloud', href: 'https://soundcloud.com/alec-meza/falling-demo/s-Q1aEhjtSKrn' },
+    { name: 'YouTube', href: 'https://youtu.be/beYUQNEpnGo' },
     { name: 'Instagram', href: 'https://www.instagram.com/_alecmeza/' },
-    { name: 'Twitter', href: 'https://twitter.com/_alecmeza' },
-    { name: 'YouTube', href: 'https://youtu.be/beYUQNEpnGo' }
+    { name: 'Twitter', href: 'https://twitter.com/_alecmeza' }
   ]
 
   return (
