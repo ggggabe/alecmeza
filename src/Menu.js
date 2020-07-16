@@ -94,8 +94,8 @@ const AnimatedLink = ({ href, name }) => {
 
 export default () => {
   const menu = [
-    { name: 'Apple Music', href: 'https://music.apple.com/us/album/extra-virgin/1520478485?uo=4&app=itunes' },
-    { name: 'Spotify', href: 'https://distrokid.com/hyperfollow/alecmeza/extra-virgin' },
+    { name: 'Apple Music', href: 'https://music.apple.com/us/album/extra-virgin/1520478485' },
+    { name: 'Spotify', href: 'https://open.spotify.com/album/09wagqMtZgKnDaTsHbQmxZ' },
     { name: 'Sound Cloud', href: 'https://soundcloud.com/alec-meza/falling-demo/s-Q1aEhjtSKrn' },
     { name: 'YouTube', href: 'https://youtu.be/beYUQNEpnGo' },
     { name: 'Instagram', href: 'https://www.instagram.com/_alecmeza/' },
