@@ -63,6 +63,9 @@ function useHover() {
     () => {
       const node = ref.current
       if (node) {
+        if (node.children[0].innerHTML == 'New Release!! (March 11)') {
+          startWiggle()
+        }
         node.addEventListener('mouseover', startWiggle)
         node.addEventListener('mouseout', stopWiggle)
 
@@ -78,9 +81,9 @@ function useHover() {
   return [ref, currentPadding]
 }
 
-const AnimatedLink = ({ href, name }) => {
+const AnimatedLink = ({ href, name, index }) => {
   const [hoverRef, padding] = useHover()
-  const [color, setColor] = useState('#eee')
+  const [color, setColor] = useState(index === 0 ? 'yellow' : '#eee')
 
   return <li ref={hoverRef} onMouseOver={() => setColor('yellow')} onMouseOut={() => setColor('white')}><a
     style={{ ...padding, color }}
@@ -95,8 +98,8 @@ const AnimatedLink = ({ href, name }) => {
 export default () => {
   const menu = [
     { name: 'New Release!! (March 11)', href: 'https://distrokid.com/hyperfollow/alecmeza/the-devil-in-the-detail' },
-    { name: 'Apple Music', href: 'https://music.apple.com/us/album/extra-virgin/1520478485' },
-    { name: 'Spotify', href: 'https://open.spotify.com/album/09wagqMtZgKnDaTsHbQmxZ' },
+    { name: 'Apple Music', href: 'https://music.apple.com/gr/artist/alec-meza/id1500249995' },
+    { name: 'Spotify', href: 'https://open.spotify.com/artist/3zTBUhiJEIBJTsFiuWJcik' },
     { name: 'Sound Cloud', href: 'https://soundcloud.com/alec-meza/falling-demo/s-Q1aEhjtSKrn' },
     { name: 'YouTube', href: 'https://youtu.be/beYUQNEpnGo' },
     { name: 'Instagram', href: 'https://www.instagram.com/_alecmeza/' },
@@ -105,7 +108,7 @@ export default () => {
 
   return (
     <ul>
-      {menu.map((props, i) => <AnimatedLink key={i} {...props} />)}
+      {menu.map((props, i) => <AnimatedLink key={i} {...props} index={i} />)}
     </ul>
   )
 }
