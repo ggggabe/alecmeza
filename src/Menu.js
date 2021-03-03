@@ -94,6 +94,7 @@ const AnimatedLink = ({ href, name }) => {
 
 export default () => {
   const menu = [
+    { name: 'New Release!! (March 11)', href: 'https://distrokid.com/hyperfollow/alecmeza/the-devil-in-the-detail' },
     { name: 'Apple Music', href: 'https://music.apple.com/us/album/extra-virgin/1520478485' },
     { name: 'Spotify', href: 'https://open.spotify.com/album/09wagqMtZgKnDaTsHbQmxZ' },
     { name: 'Sound Cloud', href: 'https://soundcloud.com/alec-meza/falling-demo/s-Q1aEhjtSKrn' },
