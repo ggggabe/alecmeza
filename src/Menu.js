@@ -94,7 +94,7 @@ const AnimatedLink = ({ href, name, index }) => {
 
 export default () => {
   const menu = [
-    { name: 'Apple Music', href: 'https://music.apple.com/gr/artist/alec-meza/id1500249995' },
+    { name: 'Apple Music', href: 'https://music.apple.com/us/album/when-youre-ready-single/1569414500' },
     { name: 'Spotify', href: 'https://open.spotify.com/track/6oOUi8dRq37vv7yvIlkhSs' },
     { name: 'SoundCloud', href: 'https://soundcloud.com/alec-meza/falling-demo/s-Q1aEhjtSKrn' },
     { name: 'YouTube', href: 'https://youtu.be/Ama9PFPpwU8' },
